@@ -19,7 +19,7 @@ Next.js 16 differs from older versions in training data. Check `node_modules/nex
 - `npm test` — Vitest once; `npm run test:watch` for watch mode
 - Single test file: `npx vitest run src/app/page.test.tsx`; single test by name: `npx vitest run -t "renders the main heading"`
 
-Before declaring a change done, run `npm run lint && npm run typecheck && npm test && npm run build`.
+Before declaring a change done, run `npm run lint && npm run typecheck && npm test && npm run build` — the same steps GitHub Actions runs (`.github/workflows/ci.yml`, on pushes to `main` and on pull requests). Node version is pinned in `.nvmrc` (22).
 
 ## Layout
 
